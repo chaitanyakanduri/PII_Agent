@@ -1,0 +1,339 @@
+2025-08-25 11:51:46,344 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 11:51:46,377 | INFO | tools.pii_detect | pii_detect.py:33 | Loaded 4 entities from policy (Presidio)
+2025-08-25 11:51:46,377 | INFO | tools.pii_detect | pii_detect.py:38 | Initializing spaCy NLP engine with model: en_core_web_lg
+2025-08-25 11:51:46,386 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 20, in process_bytes
+    entities = detect(text, policies)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 64, in detect
+    analyzer = _get_analyzer()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 51, in _get_analyzer
+    _ANALYZER = _build_analyzer()
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 40, in _build_analyzer
+    return AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\analyzer_engine.py", line 74, in __init__
+    self.nlp_engine.load()
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 56, in load
+    self._validate_model_params(model)
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 70, in _validate_model_params
+    raise ValueError("lang_code is missing from model configuration")
+ValueError: lang_code is missing from model configuration
+2025-08-25 11:56:51,519 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 11:56:51,521 | INFO | tools.pii_detect | pii_detect.py:33 | Loaded 4 entities from policy (Presidio)
+2025-08-25 11:56:51,530 | INFO | tools.pii_detect | pii_detect.py:38 | Initializing spaCy NLP engine with model: en_core_web_lg
+2025-08-25 11:56:51,532 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 20, in process_bytes
+    entities = detect(text, policies)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 64, in detect
+    analyzer = _get_analyzer()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 51, in _get_analyzer
+    _ANALYZER = _build_analyzer()
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 40, in _build_analyzer
+    return AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\analyzer_engine.py", line 74, in __init__
+    self.nlp_engine.load()
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 56, in load
+    self._validate_model_params(model)
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 70, in _validate_model_params
+    raise ValueError("lang_code is missing from model configuration")
+ValueError: lang_code is missing from model configuration
+2025-08-25 11:58:03,925 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 11:58:03,930 | INFO | tools.pii_detect | pii_detect.py:33 | Loaded 4 entities from policy (Presidio)
+2025-08-25 11:58:03,930 | INFO | tools.pii_detect | pii_detect.py:38 | Initializing spaCy NLP engine with model: en_core_web_lg
+2025-08-25 11:58:03,930 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 20, in process_bytes
+    entities = detect(text, policies)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 64, in detect
+    analyzer = _get_analyzer()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 51, in _get_analyzer
+    _ANALYZER = _build_analyzer()
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 40, in _build_analyzer
+    return AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\analyzer_engine.py", line 74, in __init__
+    self.nlp_engine.load()
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 56, in load
+    self._validate_model_params(model)
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 70, in _validate_model_params
+    raise ValueError("lang_code is missing from model configuration")
+ValueError: lang_code is missing from model configuration
+2025-08-25 12:03:10,503 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 12:03:10,514 | INFO | tools.pii_detect | pii_detect.py:33 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:03:10,514 | INFO | tools.pii_detect | pii_detect.py:38 | Initializing spaCy NLP engine with model: en_core_web_lg
+2025-08-25 12:03:10,514 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 20, in process_bytes
+    entities = detect(text, policies)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 64, in detect
+    analyzer = _get_analyzer()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 51, in _get_analyzer
+    _ANALYZER = _build_analyzer()
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 40, in _build_analyzer
+    return AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\analyzer_engine.py", line 74, in __init__
+    self.nlp_engine.load()
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 56, in load
+    self._validate_model_params(model)
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 70, in _validate_model_params
+    raise ValueError("lang_code is missing from model configuration")
+ValueError: lang_code is missing from model configuration
+2025-08-25 12:07:35,646 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 12:07:35,655 | INFO | tools.pii_detect | pii_detect.py:33 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:07:35,655 | INFO | tools.pii_detect | pii_detect.py:38 | Initializing spaCy NLP engine with model: en_core_web_lg
+2025-08-25 12:07:35,657 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 20, in process_bytes
+    entities = detect(text, policies)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 64, in detect
+    analyzer = _get_analyzer()
+               ^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 51, in _get_analyzer
+    _ANALYZER = _build_analyzer()
+                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 40, in _build_analyzer
+    return AnalyzerEngine(nlp_engine=nlp_engine, supported_languages=["en"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\analyzer_engine.py", line 74, in __init__
+    self.nlp_engine.load()
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 56, in load
+    self._validate_model_params(model)
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_analyzer\nlp_engine\spacy_nlp_engine.py", line 70, in _validate_model_params
+    raise ValueError("lang_code is missing from model configuration")
+ValueError: lang_code is missing from model configuration
+2025-08-25 12:31:48,167 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 12:31:48,171 | INFO | tools.pii_detect | pii_detect.py:43 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:31:48,174 | INFO | tools.pii_detect | pii_detect.py:49 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 12:31:57,744 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 21, in process_bytes
+    redacted_text = redact(text, policies, entities)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 122, in redact
+    res = anonymizer.anonymize(text=text, analyzer_results=entities, operators=operators)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_anonymizer\anonymizer_engine.py", line 86, in anonymize
+    analyzer_results = self._remove_conflicts_and_get_text_manipulation_data(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_anonymizer\anonymizer_engine.py", line 144, in _remove_conflicts_and_get_text_manipulation_data
+    if other_element.entity_type != result.entity_type:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'entity_type'
+2025-08-25 12:35:44,082 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 12:35:44,083 | INFO | tools.pii_detect | pii_detect.py:43 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:35:44,083 | INFO | tools.pii_detect | pii_detect.py:49 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 12:35:49,417 | ERROR | api.main | main.py:37 | Redact text failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 34, in redact_text
+    result = process_bytes(text_bytes, "text/plain")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 21, in process_bytes
+    redacted_text = redact(text, policies, entities)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pii_detect.py", line 131, in redact
+    res = anonymizer.anonymize(text=text, analyzer_results=entities, operators=operators)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_anonymizer\anonymizer_engine.py", line 96, in anonymize
+    return self._operate(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_anonymizer\core\engine_base.py", line 54, in _operate
+    changed_text = self.__operate_on_text(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\.venv\Lib\site-packages\presidio_anonymizer\core\engine_base.py", line 87, in __operate_on_text
+    operator_metadata.operator_name, operator_type
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'operator_name'
+2025-08-25 12:40:09,413 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 12:40:09,415 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:40:09,415 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 12:40:12,794 | INFO | tools.redact | redact.py:33 | Redaction complete: 3 entities found (Presidio)
+2025-08-25 12:45:17,546 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 12:45:17,548 | ERROR | api.main | main.py:27 | Redact file failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 24, in redact_file
+    result = process_bytes(content, file.content_type or "application/octet-stream")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 16, in process_bytes
+    text, ocr_meta = any_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pdf_utils.py", line 23, in any_to_text
+    text, ocr_json = ocr_file_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\ocr_di.py", line 28, in ocr_file_to_text
+    endpoint = _endpoint()
+               ^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\ocr_di.py", line 24, in _endpoint
+    raise AzureDIError("AZURE_DI_ENDPOINT not set")
+tools.ocr_di.AzureDIError: AZURE_DI_ENDPOINT not set
+2025-08-25 12:49:37,645 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 12:49:37,645 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 12:49:39,953 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 404 - {"error":{"code":"404","message": "Resource not found"}}
+2025-08-25 12:49:39,956 | ERROR | api.main | main.py:30 | Redact file failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 27, in redact_file
+    result = process_bytes(content, file.content_type or "application/octet-stream")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 16, in process_bytes
+    text, ocr_meta = any_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pdf_utils.py", line 23, in any_to_text
+    text, ocr_json = ocr_file_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\ocr_di.py", line 36, in ocr_file_to_text
+    raise AzureDIError(f"Analyze start failed: {r.status_code} {r.text}")
+tools.ocr_di.AzureDIError: Analyze start failed: 404 {"error":{"code":"404","message": "Resource not found"}}
+2025-08-25 12:52:04,998 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 12:52:04,998 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 12:52:07,263 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 404 - {"error":{"code":"404","message": "Resource not found"}}
+2025-08-25 12:52:07,263 | ERROR | api.main | main.py:30 | Redact file failed
+Traceback (most recent call last):
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\api\main.py", line 27, in redact_file
+    result = process_bytes(content, file.content_type or "application/octet-stream")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\redact.py", line 16, in process_bytes
+    text, ocr_meta = any_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\pdf_utils.py", line 23, in any_to_text
+    text, ocr_json = ocr_file_to_text(file_bytes, content_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SaiSakethCholleti\Downloads\pii_agent_presidio_azure_di\PII_Agent\tools\ocr_di.py", line 36, in ocr_file_to_text
+    raise AzureDIError(f"Analyze start failed: {r.status_code} {r.text}")
+tools.ocr_di.AzureDIError: Analyze start failed: 404 {"error":{"code":"404","message": "Resource not found"}}
+2025-08-25 12:54:54,397 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 12:54:54,397 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 12:55:00,333 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 12:55:00,333 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 12:55:06,508 | INFO | tools.redact | redact.py:33 | Redaction complete: 3 entities found (Presidio)
+2025-08-25 13:00:08,696 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 13:00:08,696 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 13:00:14,421 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 13:00:14,770 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 13:05:39,735 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 13:05:39,735 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 13:05:45,452 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 13:05:45,662 | INFO | tools.redact | redact.py:33 | Redaction complete: 18 entities found (Presidio)
+2025-08-25 13:08:51,374 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 13:08:51,381 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 13:08:57,042 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 13:08:57,312 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 13:09:53,090 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 13:09:53,090 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 13:09:57,581 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 13:09:57,758 | INFO | tools.redact | redact.py:33 | Redaction complete: 18 entities found (Presidio)
+2025-08-25 17:02:44,288 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:02:44,295 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:02:44,295 | ERROR | agent | agent.py:16 | Error during processing: AZURE_DI_ENDPOINT not set
+2025-08-25 17:02:44,298 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:02:44,298 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:02:44,298 | ERROR | agent | agent.py:16 | Error during processing: AZURE_DI_ENDPOINT not set
+2025-08-25 17:04:39,407 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:04:39,407 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:04:39,407 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:04:40,922 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:04:40,924 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:04:40,926 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:04:40,927 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:04:40,927 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:04:41,208 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:04:41,209 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:04:41,212 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:04:41,212 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:04:41,213 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:04:41,214 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 17:04:43,481 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 17:04:43,481 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:04:43,482 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:04:43,483 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:04:43,782 | INFO | tools.redact | redact.py:33 | Redaction complete: 1 entities found (Presidio)
+2025-08-25 17:06:40,565 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:06:40,565 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:06:40,565 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:06:42,073 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:06:42,074 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:06:42,081 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:06:42,081 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:06:42,081 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:06:42,370 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:06:42,370 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:06:42,373 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:06:42,373 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:06:42,374 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:06:42,375 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 17:06:43,576 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 17:06:43,576 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:06:43,577 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:06:43,578 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:06:43,636 | INFO | tools.redact | redact.py:33 | Redaction complete: 1 entities found (Presidio)
+2025-08-25 17:08:04,862 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:08:04,863 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:08:04,863 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:08:06,350 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:08:06,351 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:08:06,354 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:08:06,354 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:08:06,354 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:08:06,626 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:08:06,627 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:08:06,629 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:08:06,629 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:08:06,631 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:08:06,632 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 17:08:07,853 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 17:08:07,854 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:08:07,854 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:08:07,856 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:08:07,880 | INFO | tools.redact | redact.py:33 | Redaction complete: 1 entities found (Presidio)
+2025-08-25 17:12:27,460 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:12:27,461 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:12:27,461 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:12:27,936 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:12:27,937 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:12:27,939 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:12:27,940 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=application/pdf
+2025-08-25 17:12:27,940 | INFO | tools.ocr_di | ocr_di.py:31 | Submitting file to Azure DI Read OCR
+2025-08-25 17:12:28,241 | ERROR | tools.ocr_di | ocr_di.py:35 | DI analyze start failed: 400 - {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:12:28,243 | ERROR | agent | agent.py:16 | Error during processing: Analyze start failed: 400 {"error":{"code":"InvalidRequest","message":"Invalid request.","innererror":{"code":"UnsupportedContent","message":"Content is not supported: Bad or unrecognizable request binary file or Json."}}}
+2025-08-25 17:12:28,245 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:12:28,245 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:12:28,247 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:12:28,247 | INFO | tools.pii_detect | pii_detect.py:50 | Initializing spaCy via NlpEngineProvider with model: en_core_web_lg
+2025-08-25 17:12:29,374 | INFO | tools.redact | redact.py:33 | Redaction complete: 2 entities found (Presidio)
+2025-08-25 17:12:29,375 | INFO | agent | agent.py:9 | PIIRedactionAgent initialized
+2025-08-25 17:12:29,375 | INFO | tools.redact | redact.py:15 | Starting redaction pipeline (Presidio) for content-type=text/plain
+2025-08-25 17:12:29,376 | INFO | tools.pii_detect | pii_detect.py:44 | Loaded 4 entities from policy (Presidio)
+2025-08-25 17:12:29,400 | INFO | tools.redact | redact.py:33 | Redaction complete: 1 entities found (Presidio)

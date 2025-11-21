@@ -1,0 +1,21 @@
+version: 1
+description: Presidio-based PII redaction policy
+entities:
+  - name: US_SSN
+    replace_with: "[SSN_REDACTED]"
+  - name: EMAIL_ADDRESS
+    replace_with: "[EMAIL_REDACTED]"
+  - name: PHONE_NUMBER
+    replace_with: "[PHONE_REDACTED]"
+  - name: DATE_TIME
+    replace_with: "[DOB_REDACTED]"
+    context:
+      only_if_near_any:
+        - "dob"
+        - "date of birth"
+        - "d.o.b"
+        - "birth date"
+        - "birthdate"
+        - "born on"
+        - "DoB"
+      window: 40
