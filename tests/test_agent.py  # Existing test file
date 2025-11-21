@@ -1,0 +1,8 @@
+def test_agent_functionality():
+    assert agent_function() == expected_output
+
+def test_agent_with_mock():
+    from unittest.mock import Mock
+    mock_agent = Mock()
+    mock_agent.some_method.return_value = expected_value
+    assert mock_agent.some_method() == expected_value
